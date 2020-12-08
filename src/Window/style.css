@@ -1,0 +1,17 @@
+.Window {
+  flex: 0 0 calc(50% - 1px);
+  height: 100vh;
+  background: #ffffff;
+  border-radius: 0.6rem;
+  box-shadow: 1px 1px 2px 2px #c2c2c2;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+
+.fullscreen {
+  flex: 0 0 100%;
+}
+
+.minimized {
+  flex: 0 0 0;
+}

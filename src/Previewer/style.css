@@ -1,0 +1,23 @@
+.Previewer {
+  overflow: auto;
+  height: calc(100% - 32px);
+  padding: 2.5rem;
+}
+
+code {
+  color: black;
+  background: rgb(245, 242, 240);
+  text-shadow: white 0px 1px;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  line-height: 1.5;
+  hyphens: none;
+  padding: 0.25rem;
+  margin: 0.5em 0px;
+  border-radius: 0.25rem;
+}

@@ -1,0 +1,13 @@
+.textarea {
+  width: 100%;
+  height: calc(100% - 32px);
+  padding: 1.5rem;
+  border: none;
+  overflow: auto;
+  font-size: 1.125rem;
+  resize: none;
+}
+
+.textarea:focus {
+  outline: none;
+}
