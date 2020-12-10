@@ -5,19 +5,19 @@ import Editor from './Editor';
 import Previewer from './Previewer';
 import './App.css';
 
-const App = ({ editorIsFullscreen, previewerIsFullscreen }) => (
+const App = ({ isEditorFullscreen, isPreviewerFullscreen }) => (
   <div className="App">
     <Window
       windowName="Editor"
-      isFullscreen={editorIsFullscreen}
-      isMinimized={previewerIsFullscreen}
+      isFullscreen={isEditorFullscreen}
+      isMinimized={isPreviewerFullscreen}
     >
       <Editor />
     </Window>
     <Window
       windowName="Previewer"
-      isFullscreen={previewerIsFullscreen}
-      isMinimized={editorIsFullscreen}
+      isFullscreen={isPreviewerFullscreen}
+      isMinimized={isEditorFullscreen}
     >
       <Previewer />
     </Window>
@@ -25,8 +25,8 @@ const App = ({ editorIsFullscreen, previewerIsFullscreen }) => (
 );
 
 const mapStateToProps = (state) => ({
-  editorIsFullscreen: state.fullscreen.editor,
-  previewerIsFullscreen: state.fullscreen.previewer,
+  isEditorFullscreen: state.fullscreen.editor,
+  isPreviewerFullscreen: state.fullscreen.previewer,
 });
 
 export default connect(mapStateToProps)(App);
